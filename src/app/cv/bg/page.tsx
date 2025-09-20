@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Photo from '../../my-photo.jpg'
 import Image from 'next/image'
 import AutoPrintOnQuery from '@/components/AutoPrintOnQuery'
 
@@ -32,10 +31,11 @@ export default async function CVPage() {
         </div>
         <div className="shrink-0">
           <Image
-            src={Photo}
+            src={'/my-photo.jpg'}
             alt="Alexander Kolarov"
             width={120}
             height={120}
+            unoptimized
             className="rounded-full aspect-square object-cover border"
           />
         </div>
